@@ -22,6 +22,5 @@ abstract class Singleton
         $class = get_called_class();
         if(self::$instance[$class]) self::$instance[$class] = new $class;
         return self::$instance[$class];
-    }
-    
+    }   
 }
